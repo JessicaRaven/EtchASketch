@@ -23,5 +23,9 @@ body{
 
 .box{
     flex-grow:1;
-    background-color:hotpink;
+    background-color:rgb(255, 162, 208);
+}
+
+.boxHover{
+   background-color:black;
 }
