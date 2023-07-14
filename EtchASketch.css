@@ -7,10 +7,9 @@ body{
     display:flex;
     flex-direction:column;
     background-color:aqua;
-    height:100vh;
-    width:100vh;
+    height:86vh;
+    width:86vh;
     justify-content:space-evenly;
-    gap:1px;
     border-radius:9px;
     border-color:rgb(15, 223, 223);
     box-sizing:border-box;
@@ -23,7 +22,6 @@ body{
     flex-grow:1;
     background-color: aqua;
     display:flex;
-    gap:1px;
     justify-content:space-evenly;
 }
 
@@ -37,7 +35,7 @@ body{
 }
 
 button{
-    background-color:rgb(172, 161, 168);
+    background-color:rgb(161, 172, 164);
     height:15vh;
     font-size:25px;
     border-radius:10px;
@@ -46,6 +44,8 @@ button{
 
 .ui{
     display:flex;
+    padding:7vh;
+    background-color:rgb(117, 230, 122);
 }
 
 .buttonContainer{
