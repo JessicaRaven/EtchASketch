@@ -1,0 +1,27 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+
+#Canvas{
+    display:flex;
+    flex-direction:column;
+    background-color:aqua;
+    height:100vh;
+    width:100vh;
+    justify-content:space-evenly;
+    gap:1px;
+}
+
+.row{
+    flex-grow:1;
+    background-color: aliceblue;
+    display:flex;
+    gap:1px;
+    justify-content:space-evenly;
+}
+
+.box{
+    flex-grow:1;
+    background-color:hotpink;
+}
