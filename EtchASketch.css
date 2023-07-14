@@ -29,3 +29,16 @@ body{
 .boxHover{
    background-color:black;
 }
+
+button{
+    background-color:rgb(172, 161, 168);
+}
+
+.ui{
+    display:flex;
+}
+
+.buttonContainer{
+    display:flex;
+    flex-direction:column;
+}
