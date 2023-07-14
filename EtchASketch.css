@@ -15,7 +15,7 @@ body{
 
 .row{
     flex-grow:1;
-    background-color: aliceblue;
+    background-color: rgb(255, 121, 233);
     display:flex;
     gap:1px;
     justify-content:space-evenly;
@@ -23,7 +23,7 @@ body{
 
 .box{
     flex-grow:1;
-    background-color:rgb(255, 162, 208);
+    background-color:#f5f1f1;
 }
 
 .boxHover{
