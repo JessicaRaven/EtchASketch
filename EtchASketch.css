@@ -38,8 +38,9 @@ button{
     background-color:rgb(161, 172, 164);
     height:15vh;
     font-size:25px;
-    border-radius:10px;
+    border-radius:10px;0,0,auto;
     box-shadow:#ddd9dc;
+    min-height:30px;
 }
 
 .ui{
