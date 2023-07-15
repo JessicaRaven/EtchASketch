@@ -28,6 +28,7 @@ function generateCanvas(){
             boxes[boxIndex]=document.createElement('div');
             rows[i].appendChild(boxes[boxIndex]);
             boxes[boxIndex].classList.add("box");
+            boxes[boxIndex].style.backgroundColor="rgba(255,255,255,0.0)";
             boxIndex++;
         }
     }
@@ -40,15 +41,30 @@ function generateCanvas(){
 
 function draw(e){
     pixel=e.target;
-    pixel.classList.add("boxHover");
+    let hue=(Math.floor(Math.random()*357))+1;
 
-
+    //returns alpha value and covert to hsl
+    let alpha=pixel.style.backgroundColor.split(",");
+    if (alpha.length==4){
+    alpha=alpha[3];
+    alpha.trim();
+    alpha=alpha.slice(0,-1);
+    alpha = +alpha;
+    alpha*=100;
+    alpha+=10;
+    }
+    else{
+        alpha=100;
+    }
+    
+    pixel.style.backgroundColor= `hsla(${hue},100%,50%,${alpha}%)`;
+    console.log(pixel.style.backgroundColor);
 }
 
 function eraseCanvas(){
     for(const pixel of boxes){
         console.log("test");
-        pixel.classList.remove("boxHover");
+        pixel.style.backgroundColor="rgba(255,255,255,0)";
     }
 }
 

@@ -6,7 +6,7 @@ body{
 #Canvas{
     display:flex;
     flex-direction:column;
-    background-color:aqua;
+    background-color:rgb(255, 255, 255);
     height:86vh;
     width:86vh;
     justify-content:space-evenly;
@@ -20,14 +20,14 @@ body{
 
 .row{
     flex-grow:1;
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     display:flex;
     justify-content:space-evenly;
 }
 
 .box{
     flex-grow:1;
-    background-color:#ffffff;
+    background-color:rgba(255,255,255,0.0);
 }
 
 .boxHover{
